@@ -1,11 +1,17 @@
-const box = document.getElementById('box').addEventListener('click', () => {
-    for (let i = 1; i <= 9; i++) {
-        for (let x = 1; x <= i; x++) {
-            if(x == i) {
-                console.log(x)
-            } else {
-                break;
-            }
-        }
-    }
-})
+let table = document.getElementById('table').addEventListener('click', (e) => {
+    box(e);
+});
+
+function xPlayer() {
+    let x = 'X';
+    return x;
+}
+
+function oPlayer() {
+    let o = 'O'
+    return o;
+}
+
+function box(e) {
+    let pointer = e.target;
+}
